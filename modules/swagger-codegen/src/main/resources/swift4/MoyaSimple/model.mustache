@@ -7,19 +7,4 @@
 
 import Foundation
 
-{{#description}}
-
-/** {{description}} */{{/description}}
-{{#isArrayModel}}
-{{> modelArray}}
-{{/isArrayModel}}
-{{^isArrayModel}}
-{{#isEnum}}
-{{> modelEnum}}
-{{/isEnum}}
-{{^isEnum}}
-{{> modelObject}}
-{{/isEnum}}
-{{/isArrayModel}}
-{{/model}}
-{{/models}}
+{{#description}}/** {{description}} */{{/description}}{{#isArrayModel}}{{> modelArray}}{{/isArrayModel}}{{^isArrayModel}}{{#isEnum}}{{> modelEnum}}{{/isEnum}}{{^isEnum}}{{> modelObject}}{{/isEnum}}{{/isArrayModel}}{{/model}}{{/models}}
